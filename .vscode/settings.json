@@ -1,0 +1,23 @@
+{
+    "idf.adapterTargetName": "esp32s2",
+    "idf.openOcdConfigs": [
+        "board/esp32s2-kaluga-1.cfg"
+    ],
+    "idf.port": "/dev/cu.usbmodem1234561",
+    "files.associations": {
+        "tusb.h": "c",
+        "cdc_device.h": "c",
+        "usbd.h": "c",
+        "tinyusb.h": "c",
+        "audio_device.h": "c",
+        "msc_device.h": "c",
+        "esp_console.h": "c",
+        "esp_vfs_dev.h": "c",
+        "esp_vfs_cdcacm.h": "c",
+        "esp_check.h": "c",
+        "esp_vfs.h": "c",
+        "tusb_cdc_acm.h": "c"
+    },
+    "idf.flashType": "UART",
+    "idf.customTask": "uf2conv.py -c -b 0x00 -f ESP32S2 build/tusb_msc.bin -o app.uf2"
+}
